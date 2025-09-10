@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Sign Up</h1>
+      <form>
+        <div class="row">
+          <input
+            type="text"
+            id="firstName"
+            name="firstName"
+            placeholder="First Name"
+            class="inputBox"
+            required
+          />
+          <input
+            type="text"
+            id="lastName"
+            name="lastName"
+            placeholder="Last Name"
+            class="inputBox"
+            required
+          />
+        </div>
+        <div class="row">
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Mobile No."
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            required
+            class="inputBox fullwidth"
+          />
+        </div>
+
+        <div class="row">
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email Address"
+            required
+            class="inputBox fullwidth"
+          />
+        </div>
+
+        <div class="row">
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Password"
+            required
+            class="inputBox"
+          />
+
+          <input
+            type="Cpassword"
+            id="Cpassword"
+            name="Cpassword"
+            placeholder="Confirm Password"
+            required
+            class="inputBox"
+          />
+        </div>
+        <div class="checkBox">
+          <input type="checkbox" />
+          <label> <b>I Agree</b></label>
+          <p>
+            By clicking <span class="register-label"><b>Register</b></span
+            >, you agree to the <a href="#">Terms and Conditions</a> set out by
+            this site, including our Cookie Use.
+          </p>
+        </div>
+      </form>
+
+      <div class="buttons">
+        <button type="submit" class="registerButton">Register</button>
+        <button type="submit" class="signButton">Sign In</button>
+      </div>
+    </div>
+  </body>
+</html>
